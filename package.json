@@ -1,0 +1,33 @@
+{
+  "name": "hono-boilerplate",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.6",
+    "@prisma/adapter-pg": "^7.1.0",
+    "@prisma/client": "^7.1.0",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.39.2",
+    "hono": "^4.11.1",
+    "pg": "^8.16.3",
+    "prettier": "^3.7.4",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/pg": "^8.16.0",
+    "prisma": "^7.1.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3",
+    "vitest": "^4.0.16"
+  }
+}
